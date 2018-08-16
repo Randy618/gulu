@@ -1,30 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
     <code>
     button color:white,default,primary,success,info,blue,warning,danger,dark
     </code>
-    <m-button color="white" embossed rounded transparent >white</m-button>
-    <m-button color="default">default</m-button>
-    <m-button color="primary">primary</m-button>
-    <m-button color="success">primary</m-button>
-    <m-button color="info">info</m-button>
-    <m-button color="blue">blue</m-button>
-    <m-button color="warning">warning</m-button>
-    <m-button color="danger">danger</m-button>
-    <m-button color="dark">dark</m-button>
+    <m-button type="white" embossed rounded transparent >white</m-button>
+    <m-button type="default" size="sm">default</m-button>
+    <m-button type="primary">primary</m-button>
+    <m-button type="success" size="lg">success</m-button>
+    <m-button type="info" size="hg">info</m-button>
+    <m-button type="blue">blue</m-button>
+    <m-button type="warning">warning</m-button>
+    <m-button type="danger">danger</m-button>
+    <m-button type="dark">dark</m-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import MButton from "./components/button/Button.vue";
+import MButton from "./components/button/Button";
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
       MButton
   }
 };
