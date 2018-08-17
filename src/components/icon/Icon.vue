@@ -17,7 +17,7 @@
             classes(){
                 return [
                     {
-                        [`${prefixCls}`]: this.type !== ''&&this.type.search(${prefixCls})!=-1,
+                        [`${prefixCls}`]: this.type !== ''&&this.type.search(prefixCls)!=-1,
                         [`${this.type}`]: this.type !== ''
                     }
                 ]
@@ -25,7 +25,3 @@
         }
     }
 </script>
-
-<style scoped>
-
-</style>

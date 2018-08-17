@@ -1,14 +1,20 @@
 <template>
-    <button type="button" :class="classes"><slot></slot></button>
+    <button type="button" :class="classes">
+        <i :class="icons" v-if="icons"></i>
+        <slot></slot>
+    </button>
 </template>
 
 <script>
+    import Icon from '../icon/Icon';
     import { oneOf } from '../../utils/assist';
 
     const prefixCls = 'btn';
+    const prefixIcon = 'fa';
 
     export default {
-        name: "MButton",
+        name: "Button",
+        components:{Icon},
         props:{
             type:{
                 type:String,
@@ -35,11 +41,11 @@
             },
             size:{
                 type:String,
-                default:'',
                 validator (value) {
-                    return oneOf(value, ['sm','lg', 'hg','']);
+                    return oneOf(value, ['sm','lg', 'hg']);
                 }
-            }
+            },
+            icon:String
         },
         computed: {
             classes () {
@@ -51,10 +57,19 @@
                         [`${prefixCls}-rounded`]: this.rounded,
                         [ `${prefixCls}-transparent`]: this.transparent,
                         [`${prefixCls}-square`]: this.square,
-                        [`${prefixCls}-${this.size}`]: this.size!=='',
+                        [`${prefixCls}-${this.size}`]: this.size,
                     }
                 ];
+            },
+            icons(){
+                return [
+                    {
+                        [`${prefixIcon}`]: this.icon !== ''&&this.icon.startsWidth(prefixIcon),
+                        [`${this.icon}`]: this.icon !== ''
+                    }
+                ]
             }
+
         }
     }
 </script>

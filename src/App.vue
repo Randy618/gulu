@@ -3,7 +3,7 @@
     <code>
     button color:white,default,primary,success,info,blue,warning,danger,dark
     </code>
-    <m-button type="white" embossed rounded transparent >white</m-button>
+    <m-button type="white" embossed rounded transparent icon="fa-music">white</m-button>
     <m-button type="default" size="sm">default</m-button>
     <m-button type="primary">primary</m-button>
     <m-button type="success" size="lg">success</m-button>
@@ -21,7 +21,7 @@ import MButton from "./components/button/Button";
 export default {
   name: "app",
   components: {
-      MButton
+      MButton,
   }
 };
 </script>

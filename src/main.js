@@ -1,10 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
 
-/*import '@/assets/global/css/style.css'
-import '@/assets/global/css/theme.css'*/
+import '@/assets/global/css/style.css'
+import '@/assets/global/css/theme.css'
 import '@/assets/global/css/ui.css'
-/*import '@/assets/global/plugins/metrojs/metrojs.min.css'
+import '@/assets/global/plugins/metrojs/metrojs.min.css'
 import '@/assets/global/plugins/maps-amcharts/ammap/ammap.css'
 import '@/assets/global/plugins/slick/slick.css'
 import '@/assets/global/plugins/icheck/skins/all.css'
@@ -30,7 +30,7 @@ import '@/assets/global/plugins/input-text/style.min.css'
 import '@/assets/global/plugins/font-awesome-animation/font-awesome-animation.min.css'
 
 import '@/assets/admin/layout1/css/layout.css'
-import '@/assets/global/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js'*/
+/*import '@/assets/global/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js'*/
 
 /*import '@/assets/global/plugins/jquery/jquery-3.1.0.min.js'
 import '@/assets/global/plugins/jquery/jquery-migrate-3.0.0.min.js'
