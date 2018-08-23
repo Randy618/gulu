@@ -20,7 +20,7 @@
                 return [
                     `${prefixCls}`,
                     {
-                        [`${prefixCls}-vertical`]:true
+                        [`${prefixCls}-vertical`]:this.vertical
                     }
                 ]
             }

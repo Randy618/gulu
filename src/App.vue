@@ -1,27 +1,19 @@
 <template>
   <div id="app">
-    <code>
-    button color:white,default,primary,success,info,blue,warning,danger,dark
-    </code>
-    <m-button type="white" embossed rounded transparent icon="fa-music">white</m-button>
-    <m-button type="default" size="sm">default</m-button>
-    <m-button type="primary">primary</m-button>
-    <m-button type="success" size="lg">success</m-button>
-    <m-button type="info" size="hg">info</m-button>
-    <m-button type="blue">blue</m-button>
-    <m-button type="warning">warning</m-button>
-    <m-button type="danger">danger</m-button>
-    <m-button type="dark">dark</m-button>
+    <!--<ui-button></ui-button>-->
+    <ui-components></ui-components>
   </div>
 </template>
 
 <script>
-import MButton from "./components/button/Button";
+import uiButton from "./view/ui-button";
+import uiComponents from './view/ui-components'
 
 export default {
   name: "app",
   components: {
-      MButton,
+      uiButton,
+      uiComponents
   }
 };
 </script>
